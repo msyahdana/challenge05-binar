@@ -19,7 +19,7 @@ function Login() {
 
       let config = {
         method: "post",
-        url: "https://km4-challenge-5-api.up.railway.app/api/v1/auth/login",
+        url: `${process.env.REACT_APP_API}/v1/auth/login`,
         headers: {
           "Content-Type": "application/json",
         },
@@ -33,7 +33,7 @@ function Login() {
 
       // navigate("/");
 
-      //Temporary Solution
+      // Temporary solution
       window.location.href = "/";
     } catch (error) {
       if (axios.isAxiosError(error)) {

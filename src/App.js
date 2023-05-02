@@ -1,6 +1,5 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import Home from "./pages/Home";
 import DetailMovie from "./pages/users/DetailMovie";
 import Dashboard from "./pages/users/Dashboard";
@@ -40,6 +39,7 @@ function App() {
           }
         />
       </Routes>
+      <ToastContainer theme="colored" />
     </BrowserRouter>
   );
 }
